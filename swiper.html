@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.swiper.com.cn/demo/110-slides-per-view.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container swiper-container-horizontal">
+    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1850px, 0px, 0px);">
+<!--        <div class="swiper-slide" style="width: 340px; margin-right: 30px;">Slide 1</div>
+        <div class="swiper-slide" style="width: 340px; margin-right: 30px;">Slide 2</div>
+        <div class="swiper-slide" style="width: 340px; margin-right: 30px;">Slide 3</div>-->
+        <div class="swiper-slide three" style="width: 340px; margin-right: 30px;"><img src="img/3.jpg" alt=""></div>
+        <div class="swiper-slide swiper-slide-prev two" style="width: 340px; margin-right: 30px;"><img src="img/2.jpg" alt=""></div>
+        <div class="swiper-slide swiper-slide-active one" style="width: 340px; margin-right: 30px;"><img src="img/1.jpg" alt=""></div>
+        <div class="swiper-slide swiper-slide-next two" style="width: 340px; margin-right: 30px;"><img src="img/3.jpg" alt=""></div>
+        <div class="swiper-slide three" style="width: 340px; margin-right: 30px;"><img src="img/2.jpg" alt=""></div>
+        <div class="swiper-slide one" style="width: 340px; margin-right: 30px;"><img src="img/1.jpg" alt=""></div>
+        <div class="swiper-slide two" style="width: 340px; margin-right: 30px;"><img src="img/3.jpg" alt=""></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+<!-- Swiper JS -->
+<style>
+    .one>img{
+        width:100%;
+        height:100%;
+    }
+    .two>img{
+        width:100%;
+        height:100%;
+    }
+    .three>img{
+        width:100%;
+        height:100%;
+    }
+  .swiper-slide-next>img{
+      width:800px;
+      height:3000px;
+  }
+    .swiper-slide{
+        margin-top:150px;
+        width:120px;
+        height:230px;
+    }
+    .swiper-slide-active>img{
+        width:620px;
+        height:230px;
+    }
+    .swiper-slide-prev>img{
+        width:620px;
+        height:230px;
+    }
+    img{
+        border-radius:50%;
+    }
+</style>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay:true,
+        delay:500,
+        loop:true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+
+        },
+    });
+</script>
+
+
+</body></html>
